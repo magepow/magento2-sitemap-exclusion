@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <sitemapexclusion>
+            <general>
+                <exclusion_child_category>1</exclusion_child_category>
+            </general>
+        </sitemapexclusion>
+    </default>
+</config>
