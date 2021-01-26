@@ -13,8 +13,8 @@ class Category extends \Magento\Sitemap\Model\ItemProvider\Category
         $items = parent::getItems($storeId);
         $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
         $CategoryFactory = $objectManager->create('Magento\Catalog\Model\ResourceModel\Category\CollectionFactory');
-        $categories = $CategoryFactory->create()->addAttributeToSelect('sitemap_exclude')
-                                                ->addAttributeToFilter('sitemap_exclude', '1');
+        $categories = $CategoryFactory->create()->addAttributeToSelect('xml_sitemap_exclude')
+                                                ->addAttributeToFilter('xml_sitemap_exclude', '1');
   
         foreach ($categories as $category){
             unset($items[$category->getId()]);

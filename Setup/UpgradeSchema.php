@@ -26,7 +26,7 @@ class UpgradeSchema implements UpgradeSchemaInterface
             if ($installer->tableExists('cms_page')) {
                 $connection->modifyColumn(
                     $installer->getTable('cms_page'),
-                    'sitemap_exclude',
+                    'xml_sitemap_exclude',
                     ['type' => Table::TYPE_INTEGER, 'nullable' => true]
                 );
             }

@@ -16,8 +16,8 @@ class Product extends \Magento\Sitemap\Model\ItemProvider\Product
          $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
          $productCollection = $objectManager->create('Magento\Catalog\Model\ResourceModel\Product\Collection');
          //remove product from sitmap
-         $productId = $productCollection->addAttributeToSelect('sitemap_exclude')
-                                        ->addAttributeToFilter('sitemap_exclude', '1');       
+         $productId = $productCollection->addAttributeToSelect('xml_sitemap_exclude')
+                                        ->addAttributeToFilter('xml_sitemap_exclude', '1');       
          foreach ($productId as $product){
             
              unset($items[$product->getId()]);

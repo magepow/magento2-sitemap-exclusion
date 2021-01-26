@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
     <fieldset name="general">
-        <field name="sitemap_exclude" sortOrder="10" formElement="checkbox">
+        <field name="xml_sitemap_exclude" sortOrder="10" formElement="checkbox">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
                     <item name="source" xsi:type="string">page</item>
@@ -11,7 +11,7 @@
             <settings>
                 <dataType>boolean</dataType>
                 <label translate="true">Exclude From Sitemap</label>
-                <dataScope>sitemap_exclude</dataScope>
+                <dataScope>xml_sitemap_exclude</dataScope>
             </settings>
             <formElements>
                 <checkbox>

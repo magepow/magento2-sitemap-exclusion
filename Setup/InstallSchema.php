@@ -22,10 +22,10 @@ class InstallSchema implements InstallSchemaInterface
     ) {
         $setup->startSetup();
 
-        $setup->getConnection()->addColumn($setup->getTable('cms_page'), 'sitemap_exclude', [
+        $setup->getConnection()->addColumn($setup->getTable('cms_page'), 'xml_sitemap_exclude', [
             'type'     => Table::TYPE_INTEGER,
             'nullable' => false,
-            'comment'  => 'Exclude sitemap',
+            'comment'  => 'exclude sitemap',
         ]);
 
         $setup->endSetup();

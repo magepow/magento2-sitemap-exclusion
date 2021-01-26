@@ -53,8 +53,8 @@ class InstallData implements InstallDataInterface
         /**
          * Product attribute
          */
-        $eavSetup->removeAttribute(Product::ENTITY, 'sitemap_exclude');
-        $eavSetup->addAttribute(Product::ENTITY, 'sitemap_exclude', [
+        $eavSetup->removeAttribute(Product::ENTITY, 'xml_sitemap_exclude');
+        $eavSetup->addAttribute(Product::ENTITY, 'xml_sitemap_exclude', [
             'type'                    => 'int',
             'backend'                 => '',
             'frontend'                => '',
@@ -84,8 +84,8 @@ class InstallData implements InstallDataInterface
          */
         $categorySetup = $this->categorySetupFactory->create(['setup' => $setup]);
 
-        $categorySetup->removeAttribute(Category::ENTITY, 'sitemap_exclude');
-        $categorySetup->addAttribute(Category::ENTITY, 'sitemap_exclude', 
+        $categorySetup->removeAttribute(Category::ENTITY, 'xml_sitemap_exclude');
+        $categorySetup->addAttribute(Category::ENTITY, 'xml_sitemap_exclude', 
             [
                 'type'      => 'int',
                 'label'     => 'Exclude From Sitemap',
