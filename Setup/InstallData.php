@@ -94,7 +94,7 @@ class InstallData implements InstallDataInterface
                 'source'    => 'Magento\Eav\Model\Entity\Attribute\Source\Boolean',
                 'global'    => ScopedAttributeInterface::SCOPE_STORE,
                 'visible'   => true,
-                'required'  => true,
+                'required'  => false,
                 'user_defined' => false,
                 'default'   => null,
                 'group'     => 'General Information',
