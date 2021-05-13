@@ -4,7 +4,9 @@ Before you continue, ensure you meet the following requirements:
 
   * You have installed Magento 2.
 
-
+[![Latest Stable Version](https://poser.pugx.org/magepow/sitemapexclusion/v/stable)](https://packagist.org/packages/magepow/sitemapexclusion)
+[![Total Downloads](https://poser.pugx.org/magepow/sitemapexclusion/downloads)](https://packagist.org/packages/magepow/sitemapexclusion)
+[![Daily Downloads](https://poser.pugx.org/magepow/sitemapexclusion/d/daily)](https://packagist.org/packages/magepow/sitemapexclusion)
 ## 1. Download Magento 2 Google Site Map Exclusion
 
  ## Install via composer (recommend)
