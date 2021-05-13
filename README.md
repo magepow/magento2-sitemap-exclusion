@@ -3,7 +3,6 @@
 Before you continue, ensure you meet the following requirements:
 
   * You have installed Magento 2.
-  * You are using a Linux or Mac OS machine. Windows is not currently supported.
 
 
 ## 1. Download Magento 2 Google Site Map Exclusion
